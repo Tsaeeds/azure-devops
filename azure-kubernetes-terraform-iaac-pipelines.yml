@@ -23,7 +23,7 @@ steps:
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publicKey.secureFilePath)'
     backendType: 'azurerm'
-    backendServiceArm: 'aa-corp-nonprod-spoke(e39ceb7a-6195-4eee-b1d5-235f2d68dd87)'
+    backendServiceArm: 'aa-corp-nonprod-spoke'
     ensureBackend: true
     backendAzureRmResourceGroupName: 'terraform-backend-ips-rg'
     backendAzureRmResourceGroupLocation: 'eastus'
