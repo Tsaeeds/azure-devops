@@ -10,5 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo kubernetes and terraform $(System.DefaultWorkingDirectory)
+- script: echo DefaultWorkingDirectory $(System.DefaultWorkingDirectory)
+- script: echo ArtifactsDirectory $(System.ArtifactsDirectory)
   displayName: 'Run a one-line script'
